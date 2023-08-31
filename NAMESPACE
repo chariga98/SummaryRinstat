@@ -2,5 +2,6 @@
 
 export("%>%")
 export(na_check)
+export(summary_mean_circular)
 export(summary_mode)
 importFrom(magrittr,"%>%")
