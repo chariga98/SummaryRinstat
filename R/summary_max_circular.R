@@ -9,7 +9,7 @@
 #' @param na_type A character string specifying the type of missing values check to perform. Options include "n", "prop", "n_non_miss", "FUN", and "con".
 #' @param ... Additional arguments to be passed to the circular::quantile.circular function.
 #'
-#' @return The maximum of the input circular data vector {x}. If \code{na.rm} is \code{TRUE}, missing values are removed before calculation. If the data is empty or all missing (\code{NA}) values, the result will be \code{NA}.
+#' @return The maximum of the input circular data vector \code{x}. If \code{na.rm} is \code{TRUE}, missing values are removed before calculation. If the data is empty or all missing (\code{NA}) values, the result will be \code{NA}.
 #'
 #' @export
 #'

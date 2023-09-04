@@ -27,7 +27,7 @@ summary_max_circular(
 \item{...}{Additional arguments to be passed to the circular::quantile.circular function.}
 }
 \value{
-The maximum of the input circular data vector {x}. If \code{na.rm} is \code{TRUE}, missing values are removed before calculation. If the data is empty or all missing (\code{NA}) values, the result will be \code{NA}.
+The maximum of the input circular data vector \code{x}. If \code{na.rm} is \code{TRUE}, missing values are removed before calculation. If the data is empty or all missing (\code{NA}) values, the result will be \code{NA}.
 }
 \description{
 This function calculates the maximum of a circular data vector \code{x}.
