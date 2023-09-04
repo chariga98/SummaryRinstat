@@ -2,5 +2,9 @@
 
 export("%>%")
 export(summary_min_circular)
+export(na_check)
+export(summary_mean_circular)
+export(summary_medianHL_circular)
+export(summary_median_circular)
 export(summary_mode)
 importFrom(magrittr,"%>%")
