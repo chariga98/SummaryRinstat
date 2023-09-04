@@ -2,5 +2,7 @@
 
 export("%>%")
 export(summary_Q1_circular)
+export(summary_median_circular)
 export(summary_mode)
+export(summary_sd_circular)
 importFrom(magrittr,"%>%")
