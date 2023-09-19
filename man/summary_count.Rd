@@ -2,27 +2,22 @@
 % Please edit documentation in R/summary_count.R
 \name{summary_count}
 \alias{summary_count}
-\title{Count Elements}
+\title{Summary Count Function}
 \usage{
 summary_count(x, ...)
 }
 \arguments{
-\item{x}{A vector.}
+\item{x}{A vector or list.}
 
 \item{...}{Additional arguments (not used in this function).}
 }
 \value{
-The count (length) of elements in the input vector \code{x}.
+The length of the input vector or list.
 }
 \description{
-This function calculates the count (length) of elements in a vector.
+This function calculates the length of a vector or list.
 }
 \examples{
-# Example 1: Count the elements in a vector
-data <- c(1, 2, 3, 4, 5)
-summary_count(data)
-
-# Example 2: Count the elements in a character vector
-words <- c("apple", "banana", "cherry")
-summary_count(words)
+x <- c(1, 2, 3, 4, 5)
+summary_count(x) 
 }
