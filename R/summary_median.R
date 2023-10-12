@@ -19,7 +19,8 @@
 #' # Example with missing values and weights
 #' #y <- c(1, 2, NA, 4, 5)
 #' #w <- c(0.1, 0.2, 0.1, 0.3, 0.2)
-#' #summary_median(y, na.rm = TRUE, weights = w, na_type = "na.omit") # Returns weighted median with missing values removed
+#' #summary_median(y, na.rm = TRUE, weights = w,
+#'        na_type = "na.omit") # Returns weighted median with missing values removed
 summary_median <- function(x, na.rm = FALSE, weights = NULL, na_type = "", ...) {
   if (na.rm && na_type != "" && !na_check(x, na_type = na_type, ...)) return(NA)
   else {
@@ -27,7 +28,7 @@ summary_median <- function(x, na.rm = FALSE, weights = NULL, na_type = "", ...) 
       if (stringr::str_detect(class(x), pattern = "ordered") || stringr::str_detect(class(x), pattern = "Date")) {
         return(stats::quantile(x, na.rm = na.rm, probs = 0.5, type = 1)[[1]])
       } else {
-        return(median(x, na.rm = na.rm))
+        return(stats::median(x, na.rm = na.rm))
       }
     } else {
       return(Hmisc::wtd.quantile(x, weights = weights, probs = 0.5, na.rm = na.rm))

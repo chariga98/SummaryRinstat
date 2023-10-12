@@ -30,5 +30,6 @@ summary_median(x) # Returns the median of 'x'
 # Example with missing values and weights
 #y <- c(1, 2, NA, 4, 5)
 #w <- c(0.1, 0.2, 0.1, 0.3, 0.2)
-#summary_median(y, na.rm = TRUE, weights = w, na_type = "na.omit") # Returns weighted median with missing values removed
+#summary_median(y, na.rm = TRUE, weights = w,
+       na_type = "na.omit") # Returns weighted median with missing values removed
 }

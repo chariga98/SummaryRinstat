@@ -27,5 +27,6 @@ summary_min(x) # Returns the minimum value in 'x'
 
 # Example with missing values
 #y <- c(1, 2, NA, 4, 5)
-#summary_min(y, na.rm = TRUE, na_type = "na.omit") # Returns the minimum value with missing values removed
+#summary_min(y, na.rm = TRUE, 
+   na_type = "na.omit") # Returns the minimum value with missing values removed
 }

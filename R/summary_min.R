@@ -17,7 +17,8 @@
 #' 
 #' # Example with missing values
 #' #y <- c(1, 2, NA, 4, 5)
-#' #summary_min(y, na.rm = TRUE, na_type = "na.omit") # Returns the minimum value with missing values removed
+#' #summary_min(y, na.rm = TRUE, 
+#'    na_type = "na.omit") # Returns the minimum value with missing values removed
 summary_min <- function (x, na.rm = FALSE, na_type = "", ...) {
   # TODO: This prevents warning and Inf from being returned. Is this desirable?
   if (length(x) == 0 || (na.rm && length(x[!is.na(x)]) == 0)) return(NA)

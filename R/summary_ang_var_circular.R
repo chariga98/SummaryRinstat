@@ -15,7 +15,9 @@
 #' x <- circular::circular(c(0.1, 1.2, 2.5, NA, 3.8))
 #' summary_ang_var_circular(x) # Calculates angular variance without removing NAs
 #' summary_ang_var_circular(x, na.rm = TRUE) # Calculates angular variance after removing NAs
-#' #summary_ang_var_circular(x, na.rm = TRUE, na_type = "omit") # Calculates angular variance after removing NAs using "omit" method
+#' #summary_ang_var_circular(x, na.rm = TRUE, 
+#                         na_type = "omit") # Calculates angular variance after removing NAs using "omit" method
+
 
 summary_ang_var_circular <- function (x, na.rm = FALSE, na_type = "", ...) {
   if (length(x) == 0 || (na.rm && length(x[!is.na(x)]) == 0)) return(NA)

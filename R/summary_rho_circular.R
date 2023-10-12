@@ -15,7 +15,8 @@
 #' x <- circular::circular(c(0.1, 1.2, 2.5, 3.8, 5.0))
 #' summary_rho_circular(x) # Calculates the circular rho
 #' summary_rho_circular(x, na.rm = TRUE) # Calculates the circular rho after removing NAs
-#' summary_rho_circular(x, na_rm = TRUE, na_type = "omit") # Calculates the circular rho after removing NAs using "omit" method
+#' summary_rho_circular(x, na_rm = TRUE, 
+#'   na_type = "omit") # Calculates the circular rho after removing NAs using "omit" method
 
 summary_rho_circular <- function (x, na.rm = FALSE, na_type = "", ...) {
   if (length(x) == 0 || (na.rm && length(x[!is.na(x)]) == 0)) return(NA)

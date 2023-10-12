@@ -19,7 +19,8 @@
 #' # Example with missing values and weights
 #'# y <- c(1, 2, NA, 4, 5)
 #'# w <- c(0.1, 0.2, 0.1, 0.3, 0.2)
-#' #summary_var(y, na.rm = TRUE, weights = w, na_type = "na.omit") # Returns weighted variance with missing values removed
+#' #summary_var(y, na.rm = TRUE,
+#'  weights = w, na_type = "na.omit") # Returns weighted variance with missing values removed
 summary_var <- function(x, na.rm = FALSE, weights = NULL, na_type = "", ...) {
   if (na.rm && na_type != "" && !na_check(x, na_type = na_type, ...)) return(NA)
   else {
