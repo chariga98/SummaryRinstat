@@ -25,7 +25,7 @@ summary_median <- function(x, na.rm = FALSE, weights = NULL, na_type = "", ...) 
   else {
     if (missing(weights) || is.null(weights)) {
       if (stringr::str_detect(class(x), pattern = "ordered") || stringr::str_detect(class(x), pattern = "Date")) {
-        return(quantile(x, na.rm = na.rm, probs = 0.5, type = 1)[[1]])
+        return(stats::quantile(x, na.rm = na.rm, probs = 0.5, type = 1)[[1]])
       } else {
         return(median(x, na.rm = na.rm))
       }

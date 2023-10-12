@@ -28,9 +28,9 @@ summary_quantile <- function(x, na.rm = FALSE, weights = NULL, probs, na_type = 
   else {
     if (missing(weights) || is.null(weights)) {
       if (stringr::str_detect(class(x), pattern = "ordered") || stringr::str_detect(class(x), pattern = "Date")) {
-        return(quantile(x, na.rm = na.rm, probs = probs, type = 1))
+        return(stats::quantile(x, na.rm = na.rm, probs = probs, type = 1))
       } else {
-        return(quantile(x, na.rm = na.rm, probs = probs))
+        return(stats::quantile(x, na.rm = na.rm, probs = probs))
       }
     }
     else {
