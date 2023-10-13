@@ -27,6 +27,7 @@ summary_max(x) # Returns the maximum value in 'x'
 
 # Example with missing values
 #y <- c(1, 2, NA, 4, 5)
-#summary_max(y, na.rm = TRUE, 
-     na_type = "na.omit") # Returns the maximum value with missing values removed
+# Returns the maximum value with missing values removed
+#summary_max(y, na.rm = TRUE, na_type = "na.omit")
+ 
 }

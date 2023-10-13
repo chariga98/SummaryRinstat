@@ -25,7 +25,7 @@ summary_var <- function(x, na.rm = FALSE, weights = NULL, na_type = "", ...) {
   if (na.rm && na_type != "" && !na_check(x, na_type = na_type, ...)) return(NA)
   else {
     if (missing(weights) || is.null(weights)) {
-      return(var(x, na.rm = na.rm))
+      return(stats::var(x, na.rm = na.rm))
     } else {
       return(Hmisc::wtd.var(x, weights = weights, na.rm = na.rm))
     }

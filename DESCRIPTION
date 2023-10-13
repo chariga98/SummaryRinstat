@@ -12,5 +12,6 @@ RoxygenNote: 7.2.3
 Imports: 
     circular,
     Hmisc,
+    stats,
     stringr,
     magrittr
