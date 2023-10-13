@@ -20,8 +20,9 @@
 #' # Example with missing values and weights
 #'  #y <- c(1, 2, NA, 4, 5)
 #'  #w <- c(0.1, 0.2, 0.1, 0.3, 0.2)
-#'  #summary_quantile(y, na.rm = TRUE,
-#'      weights = w, probs = c(0.25, 0.75), na_type = "na.omit") # Returns weighted quantiles with missing values removed
+#'   # Returns weighted quantiles with missing values removed
+#'  #summary_quantile(y, na.rm = TRUE, weights = w, probs = c(0.25, 0.75), na_type = "na.omit") 
+#' 
 summary_quantile <- function(x, na.rm = FALSE, weights = NULL, probs, na_type = "", ...) {
   if (!na.rm && anyNA(x)) return(NA)
   # This prevents multiple values being returned
