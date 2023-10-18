@@ -25,6 +25,6 @@
 summary_mean_circular <- function(x, na.rm = FALSE, control.circular = list(), na_type = "", ...) {
   if (na.rm && na_type != "" && !na_check(x, na_type = na_type, ...)) 
     return(NA)
-  else 
+  else
     return(circular::mean.circular(x, na.rm = na.rm, trim = trim, control.circular = control.circular)[[1]])
 }
